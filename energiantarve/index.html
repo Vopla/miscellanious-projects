@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onload="document.getElementById('paino').focus();">
+<article class="col-sm-4 col-sm-offset-4">
+		<div>
+		<h1>Energiantarvelaskuri</h1>
+		<form>
+			<div class="form-group-sm">
+			<label for="paino">Paino:</label><br><input style="width:100%" id="paino" name="paino" type="number" onfocus="tyhjenna();"/>	
+			</div><br>
+			<div class="form-group-sm">
+			<label for="intensiteetti">Intensiteetti:</label><br>
+				<select style="width:100%" id="intensiteetti">
+					<option value="1.3">Kevyt</option>
+					<option value="1.5">Tavallinen</option>
+					<option value="1.7">Kohtalainen</option>
+					<option value="2.0">Kova</option>
+					<option value="2.2">Erittäin kova</option>
+				</select>
+			</div><br>	
+			<div>
+			<form id="sukupuoli">Sukupuoli:</form>
+				<input type="radio" name="gender" value="mies" checked="checked">Mies
+				<input type="radio" name="gender" value="nainen">Nainen
+			</div>
+		</form><br>
+		<label for="energiantarve">Energiantarve:</label>
+		<output id="energiantarve">0</output>
+		<div><input class="pull-right" type="submit" onclick="laske();"></div>	
+		</div>
+</article>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="laskut.js"></script>
+
+
+
+</body>
+
+</html>

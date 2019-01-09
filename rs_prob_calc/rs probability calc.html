@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div style="margin:auto; width:50%; max-width: ; font-family: arial; ">
+<h1 style="font-family: arial; font-size: 24;">Probability calculator</h1>
+
+<p style="font-family: arial; font-size: 16;">Input the amount of enemies killed and the drop rate of the specified item into the boxes below.</p>
+<form style="padding: 2px;" action="probability.php" method="post">
+	<h3>Enemies killed</h3>
+	<input type=number name=enemies min="1" value="1" required></input>
+	<h3>Drop rate, 1/x</h3>
+	<input type=number name=drate min="1" value="1" required></input>
+	<div style="margin-top: 50px;">
+	<input style="min-width:200px; padding:10px;" type="submit" value="Calculate">
+	</div>
+</form>
+</div>
+</body>
+</html>
