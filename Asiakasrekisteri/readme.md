@@ -1,1 +1,1 @@
-Koulutehtävänä tehty asiakasrekisteri, vaatii palvelimen tai virtuaalisen sellaisen.
+ï»¿KoulutehtÃ¤vÃ¤nÃ¤ tehty asiakasrekisteri, vaatii palvelimen tai virtuaalisen sellaisen.
