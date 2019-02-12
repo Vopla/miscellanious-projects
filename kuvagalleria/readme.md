@@ -1,0 +1,1 @@
+Kuvagalleria, vaatii (virtuaali)palvelimen.

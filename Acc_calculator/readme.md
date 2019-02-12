@@ -1,0 +1,1 @@
+Laskee pelaajan tarkkuuden osu!-pelin tuloksen mukaan.

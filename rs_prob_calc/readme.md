@@ -1,0 +1,1 @@
+Laskee todennäköisyyden johonkin tapahtumaan. 

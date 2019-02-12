@@ -1,0 +1,1 @@
+Sanojenarvailupeli, vaatii palvelimen.

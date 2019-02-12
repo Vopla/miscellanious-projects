@@ -1,0 +1,1 @@
+Laskee ihmisen energiantarpeen toiminnan raskauden mukaan.

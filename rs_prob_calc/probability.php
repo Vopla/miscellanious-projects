@@ -21,7 +21,7 @@
 
 <div style="font-family: arial; font-size: 72;">
 	
-	<p><?php print $result*100 ?> % </p>
+	<p><?php echo $result*100 ?> % </p>
 
 </div>
 </body>
