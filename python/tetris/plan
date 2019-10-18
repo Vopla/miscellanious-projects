@@ -1,0 +1,13 @@
+tetris pythonilla:
+
+-pygamella
+-palat liikkuvat ruutu kerrallaan alaspäin
+-peli nopeutuu vähitellen
+-täydet linjat katoavat
+-pisteitä joka palasta joka osuu pohjaan ja pysähtyy
+-peli loppuu jos palat pelialueen yläosaan
+
+class tetrominoille:
+- x, y
+- 90 asteen pyöritykset
+- L, J, Z, S, pitkä pala, neliö, T

@@ -1,8 +1,0 @@
-Drop chance: 5000/500 = 99.99551% 
-Drop rate: 1/500 Enemies slain: 2321
-Drop rate: 1/500 Enemies slain: 765
-Drop rate: 1/500 Enemies slain: 222
-Drop rate: 1/500 Enemies slain: 27
-Drop chance: 5000/4000 = 71.354% 
-Drop rate: 1/4000 Enemies slain: 5101
-Drop rate: 1/4000 Enemies slain: 4178

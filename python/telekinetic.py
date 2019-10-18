@@ -16,6 +16,9 @@ def Telekinetic(points_required):
             total_mazes += 1
 
     print("Mazeja vaaditaan " + str(total_mazes) + ".")
+
+    print("Tarvitset noin " + str(total_mazes * 9) + " law runea.")
+
     Aloitus()
 
 
@@ -27,20 +30,20 @@ def Alchemy(points_required):
 
     total_casts = round(total_coins / 30)
 
-    print("Tarvitset noin " + str(total_casts) + " Nature runea.")
+    print("Tarvitset noin " + str(total_casts) + " Nature runea.\n")
     
     Aloitus()
 
 def Graveyard(points_required):
 
     print("Tarvitset noin " + str(points_required) + " Nature runea Bones to Bananasilla tai "+ str(points_required * 2) + 
-            " Nature runea Bones to Peachesilla.")
+            " Nature runea Bones to Peachesilla.\n")
     Aloitus()
 
 
 def Enchantment(points_required):
     try:
-        spell = int(input("Minkä tason spelliä käytät? 1-9 "))
+        spell = int(input("Minkä tason spelliä käytät? 1-9 \n"))
         spells_required = 0
 
         if spell not in range(0,10):
@@ -60,7 +63,7 @@ def Enchantment(points_required):
             i += spell * 2
             spells_required +=1
 
-    print("Tarvitset noin "+ str(spells_required) + " Cosmic runea")
+    print("Tarvitset noin "+ str(spells_required) + " Cosmic runea. \n")
     Aloitus()
 
 def Aloitus():   
