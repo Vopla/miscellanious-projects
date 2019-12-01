@@ -1,7 +1,6 @@
-Drop chance: 200/128 = 0.0% 
-Drop rate: 1/128 Enemies slain: 24
- 0.0%
-27%
+Drop chance: 40000/5000 = 99.96648% 
+Drop rate: 1/5000 Enemies slain: 1815
+
 : 1/35 Enemies slain: 70
 Drop rate: 1/35 Enemies slain: 20
 Drop rate: 1/35 Enemies slain: 16
@@ -23,3 +22,6 @@ Team points of raid: 31000 Chance of getting 2 weight item was 0.103579%
 Team points of raid: 31500 Chance of getting 20 weighting item was 1.0525%
 Drop chance: 200/128 = 79.16707% 
 Drop rate: 1/128 Enemies slain: 15
+Drop chance: 929/512 = 83.73618% 
+Drop rate: 1/512 Enemies slain: 130
+Team points of raid: 1200000 Chance of getting 20 weighting item was 40.095226%
