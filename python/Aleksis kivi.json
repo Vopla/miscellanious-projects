@@ -1,0 +1,122 @@
+{
+    "Overall": {
+        "rank": 17955,
+        "level": 2196,
+        "xp": 299269230
+    },
+    "Attack": {
+        "rank": 69030,
+        "level": 99,
+        "xp": 14749162
+    },
+    "Defence": {
+        "rank": 59906,
+        "level": 99,
+        "xp": 14312344
+    },
+    "Strength": {
+        "rank": 57775,
+        "level": 99,
+        "xp": 17095820
+    },
+    "Hitpoints": {
+        "rank": 38608,
+        "level": 99,
+        "xp": 28639211
+    },
+    "Ranged": {
+        "rank": 35072,
+        "level": 99,
+        "xp": 26163851
+    },
+    "Prayer": {
+        "rank": 77012,
+        "level": 86,
+        "xp": 3606985
+    },
+    "Magic": {
+        "rank": 15070,
+        "level": 99,
+        "xp": 20564462
+    },
+    "Cooking": {
+        "rank": 52105,
+        "level": 99,
+        "xp": 13247286
+    },
+    "Woodcutting": {
+        "rank": 15093,
+        "level": 99,
+        "xp": 14114624
+    },
+    "Fletching": {
+        "rank": 67246,
+        "level": 99,
+        "xp": 13041091
+    },
+    "Fishing": {
+        "rank": 26801,
+        "level": 99,
+        "xp": 13058605
+    },
+    "Firemaking": {
+        "rank": 27770,
+        "level": 99,
+        "xp": 13327128
+    },
+    "Crafting": {
+        "rank": 893,
+        "level": 99,
+        "xp": 20201145
+    },
+    "Smithing": {
+        "rank": 59664,
+        "level": 86,
+        "xp": 3835099
+    },
+    "Mining": {
+        "rank": 37477,
+        "level": 91,
+        "xp": 6478821
+    },
+    "Herblore": {
+        "rank": 12224,
+        "level": 99,
+        "xp": 13136290
+    },
+    "Agility": {
+        "rank": 45947,
+        "level": 86,
+        "xp": 3632303
+    },
+    "Thieving": {
+        "rank": 54562,
+        "level": 91,
+        "xp": 6144706
+    },
+    "Slayer": {
+        "rank": 20910,
+        "level": 99,
+        "xp": 15033921
+    },
+    "Farming": {
+        "rank": 7371,
+        "level": 99,
+        "xp": 20309201
+    },
+    "Runecraft": {
+        "rank": 21785,
+        "level": 93,
+        "xp": 7547686
+    },
+    "Hunter": {
+        "rank": 30650,
+        "level": 93,
+        "xp": 7635637
+    },
+    "Construction": {
+        "rank": 44444,
+        "level": 85,
+        "xp": 3393852
+    }
+}

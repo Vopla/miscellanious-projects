@@ -1,3 +1,4 @@
+from fractions import Fraction as frac
 import random
 import os
 
@@ -30,6 +31,7 @@ def raids_kc(points, weighting, tiedostoPolku): #TODO - weight group % into a fr
     purple_chance = ((points / 8675) / 100)
     certain_purple = ((weighting / 69) * purple_chance) * 100
 
+
     #print(purple_chance)
     #print(certain_purple)
 
@@ -38,6 +40,7 @@ def raids_kc(points, weighting, tiedostoPolku): #TODO - weight group % into a fr
 
     tiedostoPolku.write("Team points of raid: "+ str(points) + " Chance of getting " + str(weighting) + " weighting item was " + str(round(certain_purple, 6)) + "%\n")
     print("Chance of team getting a purple: " + str(round(purple_chance * 100, 4)) + "% or 1 in " + str(round((100 / round(purple_chance * 100, 2) ), 1)))
+    
     print("Your team has a " + str(round(certain_purple, 6)) + "% chance of getting a " + str(weighting) + " weighting item from Chambers Of Xeric.")
     textfile_read(tiedostoPolku)
     program_start()
@@ -122,11 +125,11 @@ def program_start():
             if kills > 0:
                 drop_chance(droprate, kills,tiedostoPolku)
             
-            if kills > 50000:
+            elif kills > 50000:
                 print("Please input a smaller integer.")
                 program_start()
 
-            if kills <= 0:
+            elif kills <= 0:
                 print("Disregarding kill amount.")
 
         killcount(droprate, kerrat, tiedostoPolku)
@@ -140,7 +143,8 @@ def textfile_read(tiedostoPolku):
     if valinta == "Y":
         read_lines(tiedostoPolku)
 
-    if valinta != "Y":
+    else:
+        print("Exiting the program.")
         quitter(tiedostoPolku)
             
 def drop_chance(droprate, kills, tiedostoPolku):

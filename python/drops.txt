@@ -1,6 +1,4 @@
-Drop chance: 40000/5000 = 99.96648% 
-Drop rate: 1/5000 Enemies slain: 1815
-
+Team points of raid: 30000 Chance of getting 20 weighting item was 1.002381%
 : 1/35 Enemies slain: 70
 Drop rate: 1/35 Enemies slain: 20
 Drop rate: 1/35 Enemies slain: 16

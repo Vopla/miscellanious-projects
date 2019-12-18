@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Website with Vue.js</title>
+  <meta name="description" content="Testing Vue.js">
+  <meta name="author" content="Vopla">
+  
+ 
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="navigation">
+    <button ref="current-time" v-on:click="addNew()" id="left">{{ message }}</button>
+
+    <div id="container">
+      <ul>
+
+        <div id="test-2" class="section">
+          <current-time text="Tällä hetkellä kello on "></current-time>
+        </div>
+
+      </ul>
+      
+
+    </div>
+
+  </div>
+  <script src="js/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>

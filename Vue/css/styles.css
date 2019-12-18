@@ -1,0 +1,27 @@
+body {
+    color: dimgray;
+    background-color: rgba(121, 197, 241, 0.445)
+
+}
+
+.section{
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+
+#container{
+    margin: 0;
+    font-family: "Arial";
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+ul#container{
+    padding: 0;
+    margin: 0;
+}
