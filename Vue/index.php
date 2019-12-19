@@ -15,7 +15,7 @@
 
 <?php
 
-    $Urls = array('http://twitch.tv/vopla', 'https://github.com/Vopla');
+    $Urls = array('http://twitch.tv/', 'https://github.com/');
     function RandImg($dir)
     {
     $images = glob($dir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
