@@ -26,21 +26,52 @@ Vue.component('current-time',{
 
 })
 
-let clock = new Vue({el: "#test-2"});
+let clock = new Vue({
+    
+    el: "#test-2",
+    data:{
+        range: 1,
+    }
+});
 
 
 var button = new Vue({
     el: '#left',
     data:{
         range: 0, 
-        message: 'Press me!'
+        message: 'Add more clocks!'
         
     },
     methods: {
         addNew: function(){
-            this.message = this.range
             this.range += 1
+            clock.range += 1         
         }
     }
 
 });
+
+var removeAClock = new Vue({
+    el: '#right',
+    data:{
+        message: 'Remove the last clock',
+        
+    },
+
+    methods: {
+        removeClock: function(){
+            try{
+                if(clock.range === 0){
+                    throw "There are no clocks left";
+                    
+                }
+                else{
+                    clock.range -= 1
+                }
+            }
+            catch(err){
+                console.log("No clocks left!")
+            }
+        }
+    }
+})
