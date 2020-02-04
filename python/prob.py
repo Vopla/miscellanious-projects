@@ -98,8 +98,10 @@ def program_start():
 
         if raids_or_regular >= 2:
 
-            points = int(input("How many points did your team get? "))
+            points = int(input("How many points did your team get? "))         
             weight = int(input("Which weighting group does your item belong to? "))
+            if points <= 0 or weight <= 0:
+                quitter(tiedostoPolku)
             raids_kc(points, weight, tiedostoPolku)
 
         if raids_or_regular <= 1:    
@@ -144,7 +146,6 @@ def textfile_read(tiedostoPolku):
         read_lines(tiedostoPolku)
 
     else:
-        print("Exiting the program.")
         quitter(tiedostoPolku)
             
 def drop_chance(droprate, kills, tiedostoPolku):
@@ -155,6 +156,7 @@ def drop_chance(droprate, kills, tiedostoPolku):
 
 
 def quitter(tiedostoPolku):
+    print("Exiting the program.")
     tiedostoPolku.close()
     exit(0)
 
