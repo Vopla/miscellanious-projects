@@ -1,3 +1,11 @@
+#Calculates the amount of slayer points you get while using a certain Slayer master in Oldschool Runescape
+#based on your current slayer task streak and the amount of tasks you complete
+#TODO:
+#
+#Players often use a higher level Slayer master on 10th, 50th and so on task,
+#so implementing that is the next step.
+
+
 masters =  {"master1" : {
                 "name" : "turael",
                 "points" : 0},
