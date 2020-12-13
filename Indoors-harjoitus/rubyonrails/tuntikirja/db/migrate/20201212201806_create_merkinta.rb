@@ -1,0 +1,11 @@
+class CreateMerkinta < ActiveRecord::Migration[6.1]
+  def change
+    create_table :merkinta do |t|
+      t.string :nimi
+      t.text :kuvaus
+      t.string :luokitus
+
+      t.timestamps
+    end
+  end
+end
