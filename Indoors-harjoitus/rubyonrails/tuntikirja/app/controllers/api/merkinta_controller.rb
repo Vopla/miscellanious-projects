@@ -41,7 +41,7 @@ module Api
         private
 
         def merkinta_tiedot
-            params.permit(:nimi, :kuvaus, :luokitus)
+            params.permit(:nimi, :kuvaus, :tunnit, :luokitus)
         end
     end
 end

@@ -3,6 +3,7 @@ class CreateMerkinta < ActiveRecord::Migration[6.1]
     create_table :merkinta do |t|
       t.string :nimi
       t.text :kuvaus
+      t.integer :tunnit
       t.string :luokitus
 
       t.timestamps

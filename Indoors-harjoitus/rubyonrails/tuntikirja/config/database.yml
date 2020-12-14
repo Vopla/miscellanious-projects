@@ -19,7 +19,10 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: 5
+  timeout: 5000
+  username: <%= ENV['TUNTIKIRJA_DATABASE_USER'] %>
+  password: <%= ENV['TUNTIKIRJA_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
@@ -32,7 +35,7 @@ development:
   #username: tuntikirja
 
   # The password associated with the postgres role (username).
-  #password:
+  #password: <%= ENV['TUNTIKIRJA_DATABASE_PASSWORD'] %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -81,6 +84,5 @@ test:
 #
 production:
   <<: *default
-  database: tuntikirja_production
-  username: tuntikirja
-  password: <%= ENV['TUNTIKIRJA_DATABASE_PASSWORD'] %>
+  database: <%= ENV['TUNTIKIRJA_DATABASE_NAME'] %>
+  
