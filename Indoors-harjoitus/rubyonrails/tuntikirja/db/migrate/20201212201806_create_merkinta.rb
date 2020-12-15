@@ -1,6 +1,6 @@
 class CreateMerkinta < ActiveRecord::Migration[6.1]
   def change
-    create_table :merkinta do |t|
+    create_table :notes do |t|
       t.string :nimi
       t.text :kuvaus
       t.integer :tunnit

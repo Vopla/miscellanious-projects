@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-merkinnat = Merkinta.create({
+merkinnat = Note.create({
     nimi: "Ruby-koodaus",
     kuvaus: "Koodasin Rubylla pari tuntia",
     tunnit: 2,
