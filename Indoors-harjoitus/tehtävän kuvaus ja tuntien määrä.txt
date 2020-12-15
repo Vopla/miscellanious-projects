@@ -1,0 +1,27 @@
+Tuntikirjaussovellus:
+
+-Ruby on Rails back-end, PostgreSQL-tietokanta
+-React front-end
+
+keskustelevat keskenään REST-rajapinnan kautta
+(https://www.youtube.com/watch?v=GZvSYJDk-us rest api) 
+(https://www.youtube.com/watch?v=QojnRc7SS9o simple ruby on rails 5 rest api from scratch)
+(https://www.youtube.com/watch?v=T3Px88x_PsA) fetching data from an api in react
+react->json->rubyonrails->sql->postgre
+
+
+frontendissä eri näkymiä, joissa tietoa suodatetaan näkymäkohtaisesti esim. päivämäärien mukaan
+reaaliaikainen, ei tarvitse päivittää sivua, että uudet tiedot näkyvät
+
+mobiiliystävällinen siisti käyttöliittymä
+
+bonuspisteitä autentikaation toteutuksesta Railsiin
+
+
+KIRJAA KÄYTTÄMÄSI TUNNIT
+
+12.12 2h työympäristön luominen ja ongelmien ratkaisu
+13.12 1h ruby on rails rest-apin luonti
+14.12 2h sain postgreSQL-tietokannan toimimaan ja Ruby On Railsin viemään tietoja kantaan
+15.12 4h kirjoitin osan rails-koodista uudelleen, koska aikaisempi toteutus sai minut sekoamaan helpommin,
+		 aloitin myös reactin kanssa puuhailun.
