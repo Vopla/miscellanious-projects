@@ -4,9 +4,6 @@ Tuntikirjaussovellus:
 -React front-end
 
 keskustelevat keskenään REST-rajapinnan kautta
-(https://www.youtube.com/watch?v=GZvSYJDk-us rest api) 
-(https://www.youtube.com/watch?v=QojnRc7SS9o simple ruby on rails 5 rest api from scratch)
-(https://www.youtube.com/watch?v=T3Px88x_PsA) fetching data from an api in react
 react->json->rubyonrails->sql->postgre
 
 
@@ -16,7 +13,6 @@ reaaliaikainen, ei tarvitse päivittää sivua, että uudet tiedot näkyvät
 mobiiliystävällinen siisti käyttöliittymä
 
 bonuspisteitä autentikaation toteutuksesta Railsiin
-
 
 KIRJAA KÄYTTÄMÄSI TUNNIT
 
