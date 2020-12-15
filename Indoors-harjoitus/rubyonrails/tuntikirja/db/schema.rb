@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_12_12_201806) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "merkinta", force: :cascade do |t|
+  create_table "notes", force: :cascade do |t|
     t.string "nimi"
     t.text "kuvaus"
     t.integer "tunnit"

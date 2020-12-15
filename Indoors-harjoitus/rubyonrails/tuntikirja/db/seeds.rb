@@ -6,9 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+for i in 1..5
 merkinnat = Note.create({
-    nimi: "Ruby-koodaus",
+    nimi: "Ruby-koodaus #{i}",
     kuvaus: "Koodasin Rubylla pari tuntia",
     tunnit: 2,
     luokitus: "rento"
 })
+end
