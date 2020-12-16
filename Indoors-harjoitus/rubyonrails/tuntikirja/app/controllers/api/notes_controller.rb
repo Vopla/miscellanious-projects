@@ -2,7 +2,9 @@ module Api
     class NotesController < ApplicationController
         def index
             notes = Note.order('created_at DESC');
+            #render json: {status: 'SUCCESS', message:'Merkinnät haettu', data:notes},status: :ok
             render json: {status: 'SUCCESS', message:'Merkinnät haettu', data:notes},status: :ok
+            
         end
 
         def show

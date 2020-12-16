@@ -21,3 +21,4 @@ KIRJAA KÄYTTÄMÄSI TUNNIT
 14.12 2h sain postgreSQL-tietokannan toimimaan ja Ruby On Railsin viemään tietoja kantaan
 15.12 4h kirjoitin osan rails-koodista uudelleen, koska aikaisempi toteutus sai minut sekoamaan helpommin,
 		 aloitin myös reactin kanssa puuhailun.
+16.12 2h React-sivu tulostaa nyt tietokantaan asetetut tiedot

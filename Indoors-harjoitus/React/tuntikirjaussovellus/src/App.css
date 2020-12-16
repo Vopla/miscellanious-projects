@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.TableRow{
+  flex-direction: row;
+  padding: 50%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
