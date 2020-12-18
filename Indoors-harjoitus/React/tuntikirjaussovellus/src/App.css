@@ -1,10 +1,49 @@
-.App {
-  text-align: center;
+body{
+  background-color: #282c34;
 }
 
-.TableRow{
-  flex-direction: row;
-  padding: 50%;
+.Nimi{
+  grid-area: Nimi;
+}
+
+.Kuvaus{
+  grid-area: Kuvaus;
+}
+
+.Tunnit{
+  grid-area: Tunnit;
+}
+
+.Luokitus{
+  grid-area: Luokitus;
+}
+
+.Header{
+  display: flex;
+  align-items: center;
+  background-color: moccasin;
+}
+
+.Otsikot{
+  display: grid;
+  grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  padding-left: 2.5rem;
+}
+
+.Osio{
+  border-style: solid;
+  border-color: darkseagreen;
+  list-style-type: none;
+  display: grid;
+  grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.App {
+  color: azure;
+  max-width: 1000px;
 }
 
 .App-logo {

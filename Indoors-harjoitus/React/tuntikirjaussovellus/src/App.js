@@ -1,6 +1,12 @@
 import './App.css';
 import React, { useState } from 'react'
 
+const Header = (props)=>{
+  return(
+    <p>{props.url}</p>
+  )
+}
+
 
 const ListItem = (props) =>{
     const data = props.data
@@ -8,12 +14,12 @@ const ListItem = (props) =>{
   return (
     <div>
           {data.map(item => 
-            <tr className="TableRow" key={item.idj}>
-              <td>{item.nimi}</td>
-              <td>{item.kuvaus}</td>
-              <td>{item.tunnit}</td>
-              <td>{item.luokitus}</td>
-            </tr>
+            <ul key={item.id} className="Osio">
+              <li className="Nimi">{item.nimi}</li>
+              <li className="Kuvaus">{item.kuvaus}</li>
+              <li className="Tunnit">{item.tunnit}</li>
+              <li className="Luokitus">{item.luokitus}</li>
+            </ul>
           )}
     </div>
 
@@ -34,11 +40,16 @@ function App() {
 
   
   return (
+
     <div className="App">
-      <table>
-        <ListItem data={data}></ListItem>
-      </table>
-        {url}
+      <Header url={url} className="Header"></Header>
+      <div className="Otsikot">
+        <p className="Nimi">Nimi</p>
+        <p className="Kuvaus">Kuvaus</p>
+        <p className="Tunnit">Tunnit</p>
+        <p className="Luokitus">Luokitus</p>
+      </div>
+      <ListItem data={data}></ListItem>
     </div>
     
   );
