@@ -2,20 +2,35 @@ body{
   background-color: #282c34;
 }
 
+.NewNote{
+  display:grid;
+  grid-template-areas: "Nimi Kuvaus Tunnit Luokitus Send";
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  border-style: solid;
+}
+
 .Nimi{
   grid-area: Nimi;
 }
 
 .Kuvaus{
   grid-area: Kuvaus;
+  
 }
 
 .Tunnit{
   grid-area: Tunnit;
+  padding-left: 0.25em;
 }
 
 .Luokitus{
   grid-area: Luokitus;
+  padding-left: 0.25em;
+}
+
+.Send{
+  grid-area: Send;
 }
 
 .Header{
@@ -28,17 +43,18 @@ body{
   display: grid;
   grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
   grid-template-columns: 1fr 3fr 1fr 1fr;
-  padding-left: 2.5rem;
+  padding-left: 0.25em;
 }
 
 .Osio{
   border-style: solid;
   border-color: darkseagreen;
   list-style-type: none;
+  padding-left: 0.25em;
   display: grid;
   grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
   grid-template-columns: 1fr 3fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
 }
 
 .App {

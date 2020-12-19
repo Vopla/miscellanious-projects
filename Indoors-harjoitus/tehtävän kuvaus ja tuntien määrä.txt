@@ -6,7 +6,6 @@ Tuntikirjaussovellus:
 keskustelevat keskenään REST-rajapinnan kautta
 react->json->rubyonrails->sql->postgre
 
-
 frontendissä eri näkymiä, joissa tietoa suodatetaan näkymäkohtaisesti esim. päivämäärien mukaan
 reaaliaikainen, ei tarvitse päivittää sivua, että uudet tiedot näkyvät
 
@@ -23,3 +22,4 @@ KIRJAA KÄYTTÄMÄSI TUNNIT
 		 aloitin myös reactin kanssa puuhailun.
 16.12 2h React-sivu tulostaa nyt tietokantaan asetetut tiedot
 18.12 2h Kirjatut tunnit näkyvät nyt taulukkona, mobiiliystävällisyydessä on vielä puutteita
+19.12 4h Päivittelin sivua mobiiliystävällisemmämmäksi ja aloitin uusien tuntien kirjaamisen toteutuksen 

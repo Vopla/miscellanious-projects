@@ -11,7 +11,7 @@ for i in 1..5
 merkinnat = Note.create({
     nimi: "Ruby-koodaus #{i}",
     kuvaus: "Koodasin Rubylla pari tuntia",
-    tunnit: 2,
+    tunnit: rand(1..5),
     luokitus: "rento"
 })
 end
