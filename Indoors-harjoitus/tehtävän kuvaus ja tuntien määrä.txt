@@ -22,4 +22,5 @@ KIRJAA KÄYTTÄMÄSI TUNNIT
 		 aloitin myös reactin kanssa puuhailun.
 16.12 2h React-sivu tulostaa nyt tietokantaan asetetut tiedot
 18.12 2h Kirjatut tunnit näkyvät nyt taulukkona, mobiiliystävällisyydessä on vielä puutteita
-19.12 4h Päivittelin sivua mobiiliystävällisemmämmäksi ja aloitin uusien tuntien kirjaamisen toteutuksen 
+19.12 4h Päivittelin sivua mobiiliystävällisemmämmäksi ja aloitin uusien tuntien kirjaamisen toteutuksen
+20.12 1h Muuttelin sivun ulkonäköä ja yritin saada uusien merkintöjen lisäyksen toimimaan 

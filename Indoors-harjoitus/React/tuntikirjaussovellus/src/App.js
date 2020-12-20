@@ -3,25 +3,32 @@ import React, { useState } from 'react'
 
 const Header = (props)=>{
   return(
-    <p>{props.url}</p>
+    <div className={props.className}>
+      {props.text}
+    </div>
+  )
+}
+
+const Otsikko = ({text}) => {
+  return(
+    <p className={text}>{text}</p>
   )
 }
 
 const Submit = (event) => {
+  console.log(event)
   event.preventDefault()
-  const data = event.data
 
   fetch(event.url, {
     method: 'POST',
-    body: data
+    body: event.target
   })
   .then(response => console.log(response))
 }
 
-const handleNoteChange = (event) => {   
+const handleNoteChange = (event) => { 
+  event.preventDefault()  
   console.log(event.target.value)   
-  setFormData(event.target.value)
- 
 }
 
 const Button = (props) => {
@@ -30,16 +37,15 @@ const Button = (props) => {
   )
 }
 
-const ItemForm = (props) => {
-  const formData = props.formData 
+const ItemForm = ({formData, setFormData}) => {
 
   return (
-    <div>
+    <div className="FormDiv">
       <form className="NewNote" onSubmit={Submit}>
-        <input className="Nimi" placeholder="Tehtävän nimi" type="text" name="nimi" value="nimi" onChange={handleNoteChange} required></input>
-        <input className="Kuvaus" placeholder="Kuvaus" type="text" name="kuvaus" value="kuvaus" onChange={handleNoteChange} required></input>
-        <input className="Tunnit" placeholder="Tunnit" type="number" name="tunnit" value="tunnit" onChange={handleNoteChange} required></input>
-        <input className="Luokitus" placeholder="Luokitus" type="text" name="luokitus" value="luokitus" onChange={handleNoteChange}></input>
+        <input className="Nimi" placeholder="Tehtävän nimi" type="text" name="nimi" value={formData.nimi} onChange={e => setFormData({nimi :e.target.value})} required></input>
+        <input className="Kuvaus" placeholder="Kuvaus" type="text" name="kuvaus" value={formData.kuvaus} onChange={e => setFormData({kuvaus :e.target.value})} required></input>
+        <input className="Tunnit" placeholder="Tunnit" type="number" name="tunnit" value={formData.tunnit} onChange={e => setFormData({tunnit :e.target.value})} required></input>
+        <input className="Luokitus" placeholder="Luokitus" type="text" name="luokitus" value={formData.luokitus} onChange={e => setFormData({luokitus :e.target.value})}></input>
         <input className="Send" type="submit" value="Lähetä"></input>
       </form>
     </div>
@@ -68,9 +74,9 @@ function App() {
   const [data, setData] = useState([])
   const [isloaded, setLoaded] = useState(false)
   const [formData, setFormData] = useState({
-    nimi: null,
-    kuvaus: null,
-    tunnit: null,
+    nimi: "",
+    kuvaus: "",
+    tunnit: "",
     luokitus: "",
   })
   const url = "http://127.0.0.1:3000/api/notes/"
@@ -86,13 +92,13 @@ function App() {
   return (
 
     <div className="App">
-      <Header url={url} className="Header"></Header>
-        <ItemForm formData={formData}></ItemForm>
+      <Header text="Tuntikirjasovellus" className="Header"></Header>
+        <ItemForm formData={formData} setFormData={setFormData}></ItemForm>
       <div className="Otsikot">
-        <p className="Nimi">Nimi</p>
-        <p className="Kuvaus">Kuvaus</p>
-        <p className="Tunnit">Tunnit</p>
-        <p className="Luokitus">Luokitus</p>
+        <Otsikko text="Nimi"></Otsikko>
+        <Otsikko text="Kuvaus"></Otsikko>
+        <Otsikko text="Tunnit"></Otsikko>
+        <Otsikko text="Luokitus"></Otsikko>
       </div>
       <ListItem data={data}></ListItem>
     </div>
