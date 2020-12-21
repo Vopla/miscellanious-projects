@@ -2,7 +2,6 @@ module Api
     class NotesController < ApplicationController
         def index
             notes = Note.order('created_at DESC');
-            #render json: {status: 'SUCCESS', message:'Merkinnät haettu', data:notes},status: :ok
             render json: {status: 'SUCCESS', message:'Merkinnät haettu', data:notes},status: :ok
             
         end
@@ -13,7 +12,7 @@ module Api
         end
 
         def create
-            note = Note.new(merkinta_tiedot)
+            note = Note.new(note_permitted)
             if note.save
                 render json: {status: 'SUCCESS', message:'Merkintä tallennettu', data:note},status: :ok
             else
