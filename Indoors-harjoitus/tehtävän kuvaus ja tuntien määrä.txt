@@ -25,3 +25,4 @@ KIRJAA KÄYTTÄMÄSI TUNNIT
 19.12 4h Päivittelin sivua mobiiliystävällisemmämmäksi ja aloitin uusien tuntien kirjaamisen toteutuksen
 20.12 1h Muuttelin sivun ulkonäköä ja yritin saada uusien merkintöjen lisäyksen toimimaan
 21.12 2h Samaa mitä edellisenä päivänä, vaikeuksia saada oikeita tietoja menemään serverille. 
+22.12 2h Uusia tehtäviä on nyt mahdollista lisätä nettisivun kautta.

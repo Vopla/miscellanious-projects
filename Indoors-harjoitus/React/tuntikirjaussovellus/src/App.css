@@ -2,9 +2,6 @@ body{
   background-color: #282c34;
 }
 
-.FormDiv{
-}
-
 .NewNote{
   display:grid;
   grid-template-areas: "Nimi Kuvaus Tunnit Luokitus Send";
@@ -46,18 +43,20 @@ body{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
-  padding-left: 0.3em;
+  
+  justify-items: center;
+  justify-self: center;
 }
 
 .Osio{
   border-style: solid;
   border-color: darkseagreen;
   list-style-type: none;
-  padding-left: 0.25em;
   display: grid;
   grid-template-areas: "Nimi Kuvaus Tunnit Luokitus";
   grid-template-columns: 1fr 3fr 1fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  justify-items: center;
 }
 
 .App {
