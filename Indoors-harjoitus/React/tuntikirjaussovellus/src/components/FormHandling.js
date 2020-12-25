@@ -1,44 +1,51 @@
 import React, { useState } from 'react'
 
 const Submit = (event, props) => {
+    console.log(props)
     event.preventDefault()
-    console.log(event.target)
   
     fetch(props.url, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        nimi: props.Nimi,
-        kuvaus: props.Kuvaus,
-        tunnit: props.Tunnit,
-        luokitus: props.Luokitus
-      }),
+      body: JSON.stringify(
+        props.FormValues
+      ),
       
     })
-    .then(response => console.log(response))
-    .catch(e => console.log(e))    
-  }
-  
+    .then(response => console.log(`Status: ${response.status}`))
+    .catch(e => console.log(e))
+    
+    props.setFormValues({
+      ...props.FormValues,
+      nimi: "",
+      kuvaus: "",
+      tunnit: "",
+      luokitus: ""
+    })
+}
+
   const Form = (props) => {
-    const [Nimi, setNimi] = useState("")
-    const [Kuvaus, setKuvaus] = useState("")
-    const [Tunnit, setTunnit] = useState("")
-    const [Luokitus, setLuokitus] = useState("")
+    const [FormValues, setFormValues] = useState({
+      nimi: "",
+      kuvaus: "",
+      tunnit: "",
+      luokitus: ""
+    })
     const url = props.url
   
     return (
       <div className="FormDiv">
-        <form className="NewNote" onSubmit={e => Submit(e, {Nimi, Kuvaus, Tunnit, Luokitus , url})}>
-          <input className="Nimi" placeholder="Tehtävän nimi" type="text" name="nimi" value={Nimi} onChange={e => setNimi(e.target.value)} required></input>
-          <input className="Kuvaus" placeholder="Kuvaus" type="text" name="kuvaus" value={Kuvaus} onChange={e => setKuvaus(e.target.value)} required></input>
-          <input className="Tunnit" placeholder="Tunnit" type="number" name="tunnit" value={Tunnit} onChange={e => setTunnit(e.target.value)} required></input>
-          <select value={Luokitus} onChange={e => setLuokitus(e.target.value)}>
+        <form className="NewNote" onSubmit={e => Submit(e, {FormValues, setFormValues, url})}>
+          <input className="TheForm" placeholder="Tehtävän nimi" type="text" name="name" value={FormValues.nimi} onChange={e => setFormValues({...FormValues, nimi: e.target.value})} required></input>
+          <input className="TheForm" placeholder="Kuvaus" type="text" name="desc" value={FormValues.kuvaus} onChange={e => setFormValues({...FormValues, kuvaus: e.target.value })} required></input>
+          <input className="TheForm" placeholder="Tunnit" type="number" name="hours" value={FormValues.tunnit} onChange={e => setFormValues({...FormValues, tunnit: e.target.value})} required></input>
+          <select value={FormValues.luokitus} onChange={e => setFormValues({...FormValues, luokitus: e.target.value})}>
             <option value="kiireellinen">Kiireellinen</option>
             <option value="rento">Rento</option>
           </select>
-          <input className="Send" type="submit" value="Lähetä"></input>
+          <input className="TheForm" type="submit" value="Lähetä"></input>
         </form>
       </div>
     )

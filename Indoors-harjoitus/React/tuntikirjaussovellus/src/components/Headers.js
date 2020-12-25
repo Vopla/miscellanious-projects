@@ -3,15 +3,17 @@ import React from 'react';
 
 const Header = (props) => {
     return(
-      <div className={props.className}>
+      <p className={props.className}>
         {props.text}
-      </div>
+      </p>
     )
   }
   
 const Otsikko = ({text}) => {
+    const styling = `Header-button ${text}`
+
     return(
-      <p className={text}>{text}</p>
+      <button className={styling}>{text}</button>
     )
 }
 

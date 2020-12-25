@@ -6,6 +6,8 @@ Tuntikirjaussovellus:
 keskustelevat keskenään REST-rajapinnan kautta
 react->json->rubyonrails->sql->postgre
 
+
+Työprojekteja, joilla omia kirjauksia.
 frontendissä eri näkymiä, joissa tietoa suodatetaan näkymäkohtaisesti esim. päivämäärien mukaan
 reaaliaikainen, ei tarvitse päivittää sivua, että uudet tiedot näkyvät
 
@@ -26,3 +28,4 @@ KIRJAA KÄYTTÄMÄSI TUNNIT
 20.12 1h Muuttelin sivun ulkonäköä ja yritin saada uusien merkintöjen lisäyksen toimimaan
 21.12 2h Samaa mitä edellisenä päivänä, vaikeuksia saada oikeita tietoja menemään serverille. 
 22.12 2h Uusia tehtäviä on nyt mahdollista lisätä nettisivun kautta.
+24.12 2h Poistometodin luonti ja CSS-määritysten kanssa toimiminen
